@@ -25,7 +25,7 @@
   text-fill: lighten(@water,20);
   ["mapnik::geometry_type"=1] {
     text-placement: point;
-    text-wrap-width: 80;
+    text-wrap-width: 50;
     text-wrap-before: true;
   }
   ["mapnik::geometry_type"=2] {
@@ -140,6 +140,7 @@
   text-halo-radius: 1;
   text-halo-rasterizer: fast;
   text-wrap-width: 30;
+  text-line-spacing: -2;
   [scalerank=1] {
     [zoom=2]  { text-size: 12; text-wrap-width: 60; }
     [zoom=3]  { text-size: 13; text-wrap-width: 60; }
