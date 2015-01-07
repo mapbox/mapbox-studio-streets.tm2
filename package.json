@@ -1,8 +1,7 @@
 {
-    "name": "mapbox-streets-style",
-    "version": "5.0.1",
-    "description": "Mapbox Streets style.",
-    "private": true,
+    "name": "mapbox-studio-streets",
+    "version": "5.1.0",
+    "description": "Mapbox Streets style for Mapbox Studio.",
     "main": "./package.json"
 }
 
