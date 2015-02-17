@@ -45,7 +45,7 @@ layers:
   - contour.label
 maxzoom: 19
 minzoom: 0
-name: MapBox Streets
+name: Streets
 source: "mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v5"
 styles: 
   - vars.mss
