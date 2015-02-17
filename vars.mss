@@ -109,8 +109,6 @@
 @town_text:         @land * 0.2;
 @town_halo:         @place_halo;
 
-@poi_text:          @poi_text;  
-
 @road_text:         #666;
 @road_halo:         #fff;
 
