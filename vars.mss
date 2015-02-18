@@ -31,7 +31,7 @@
 @wood:              #B0C89F;
 @industrial:        #DDDCDC;
 @agriculture:       #EAE0D0;
-@snow:              #EDE5DD;
+@snow:              #E8EFEF;
 @crop:              #E9E5C2;
 @building:          darken(@land, 8);
 @hospital:          #F2E3E1;
@@ -59,11 +59,11 @@
 
 @main_line:     #fff;
 @main_fill:     #fff;
-@main_case:     #000;
+@main_case:     #333;
 
 @road_line:     #fff;
 @road_fill:     #fff;
-@road_case:     #000;
+@road_case:     #666;
 
 @pedestrian_line:   #fff;
 @pedestrian_fill:   @pedestrian_line;
@@ -100,10 +100,10 @@
 @country_text:      @land * 0.2;
 @country_halo:      @place_halo;
 
-@state_text:        #666;
+@state_text:        #765;
 @state_halo:        @place_halo;
 
-@city_text:         @land * 0.1;
+@city_text:         #000;
 @city_halo:         @place_halo;
 
 @town_text:         @land * 0.2;

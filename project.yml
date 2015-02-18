@@ -32,7 +32,6 @@ layers:
   - road
   - bridge
   - admin
-  - country_label_line
   - country_label
   - marine_label
   - state_label
@@ -46,7 +45,7 @@ layers:
 maxzoom: 19
 minzoom: 0
 name: Streets
-source: "mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v5"
+source: "mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v6"
 styles: 
   - vars.mss
   - bg.mss
