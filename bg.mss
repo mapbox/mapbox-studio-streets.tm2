@@ -119,6 +119,7 @@ Map { background-color: @land; }
   [class='glacier'],
   [class='piste'] {
     polygon-fill: @snow;
+    polygon-opacity: 0.5;
   }
   [class='park'] {
     polygon-fill: @park;
@@ -126,15 +127,6 @@ Map { background-color: @land; }
     [zoom=8] { polygon-opacity: 0.4; }
     [zoom=9] { polygon-opacity: 0.6; }
     [zoom=10]{ polygon-opacity: 0.8; }
-    /*[zoom>=11] {
-      line-color: #480;
-      line-opacity: 0.2;
-      line-join: round;
-      [zoom>=12] { 
-        line-width: 2;
-        line-offset: -1;
-      }
-    }*/
   }
   [class='wood'] {
     polygon-fill: @wood;
