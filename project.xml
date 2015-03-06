@@ -303,6 +303,69 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>landcover</StyleName>  </Layer>
 
+<Style name="hillshade-0" filter-mode="first" image-filters-inflate="true" comp-op="hard-light">
+  <Rule>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([class] = 'highlight')</Filter>
+    <PolygonSymbolizer fill="rgba(255, 255, 255, 0.125)" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([class] = 'shadow')</Filter>
+    <PolygonSymbolizer fill="rgba(0, 0, 0, 0.075)" />
+  </Rule>
+</Style>
+<Style name="hillshade-1" filter-mode="first" image-filters="agg-stack-blur(2,2)" image-filters-inflate="true" comp-op="hard-light">
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([class] = 'highlight')</Filter>
+    <PolygonSymbolizer fill="rgba(255, 255, 255, 0.125)" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([class] = 'shadow')</Filter>
+    <PolygonSymbolizer fill="rgba(0, 0, 0, 0.075)" />
+  </Rule>
+</Style>
+<Style name="hillshade-2" filter-mode="first" image-filters="agg-stack-blur(4,4)" image-filters-inflate="true" comp-op="hard-light">
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([class] = 'highlight')</Filter>
+    <PolygonSymbolizer fill="rgba(255, 255, 255, 0.125)" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([class] = 'shadow')</Filter>
+    <PolygonSymbolizer fill="rgba(0, 0, 0, 0.075)" />
+  </Rule>
+</Style>
+<Style name="hillshade-3" filter-mode="first" image-filters="agg-stack-blur(8,8)" image-filters-inflate="true" comp-op="hard-light">
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([class] = 'highlight')</Filter>
+    <PolygonSymbolizer fill="rgba(255, 255, 255, 0.125)" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([class] = 'shadow')</Filter>
+    <PolygonSymbolizer fill="rgba(0, 0, 0, 0.075)" />
+  </Rule>
+</Style>
+<Layer name="hillshade"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>hillshade-3</StyleName>
+    <StyleName>hillshade-2</StyleName>
+    <StyleName>hillshade-1</StyleName>
+    <StyleName>hillshade-0</StyleName>  </Layer>
+
+<Layer name="contour"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
 <Style name="landuse" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -426,79 +489,6 @@
 <Layer name="landuse"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>landuse</StyleName>  </Layer>
-
-<Style name="contour" filter-mode="first">
-  <Rule>
-    <Filter>([index] &gt;= 5)</Filter>
-    <LineSymbolizer stroke-opacity="0.2" stroke-width="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([index] != -1)</Filter>
-    <LineSymbolizer stroke-width="0.5" stroke-opacity="0.1" />
-  </Rule>
-</Style>
-<Layer name="contour"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>contour</StyleName>  </Layer>
-
-<Style name="hillshade-0" filter-mode="first" image-filters-inflate="true" comp-op="hard-light">
-  <Rule>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([class] = 'highlight')</Filter>
-    <PolygonSymbolizer fill="rgba(255, 255, 255, 0.125)" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([class] = 'shadow')</Filter>
-    <PolygonSymbolizer fill="rgba(0, 0, 0, 0.075)" />
-  </Rule>
-</Style>
-<Style name="hillshade-1" filter-mode="first" image-filters="agg-stack-blur(2,2)" image-filters-inflate="true" comp-op="hard-light">
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([class] = 'highlight')</Filter>
-    <PolygonSymbolizer fill="rgba(255, 255, 255, 0.125)" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([class] = 'shadow')</Filter>
-    <PolygonSymbolizer fill="rgba(0, 0, 0, 0.075)" />
-  </Rule>
-</Style>
-<Style name="hillshade-2" filter-mode="first" image-filters="agg-stack-blur(4,4)" image-filters-inflate="true" comp-op="hard-light">
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([class] = 'highlight')</Filter>
-    <PolygonSymbolizer fill="rgba(255, 255, 255, 0.125)" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([class] = 'shadow')</Filter>
-    <PolygonSymbolizer fill="rgba(0, 0, 0, 0.075)" />
-  </Rule>
-</Style>
-<Style name="hillshade-3" filter-mode="first" image-filters="agg-stack-blur(8,8)" image-filters-inflate="true" comp-op="hard-light">
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([class] = 'highlight')</Filter>
-    <PolygonSymbolizer fill="rgba(255, 255, 255, 0.125)" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([class] = 'shadow')</Filter>
-    <PolygonSymbolizer fill="rgba(0, 0, 0, 0.075)" />
-  </Rule>
-</Style>
-<Layer name="hillshade"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>hillshade-3</StyleName>
-    <StyleName>hillshade-2</StyleName>
-    <StyleName>hillshade-1</StyleName>
-    <StyleName>hillshade-0</StyleName>  </Layer>
 
 <Style name="waterway" filter-mode="first">
   <Rule>
@@ -7730,15 +7720,5 @@
 <Layer name="housenum_label"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>housenum_label</StyleName>  </Layer>
-
-<Style name="contour-label" filter-mode="first">
-  <Rule>
-    <Filter>([index] &gt;= 5)</Filter>
-    <TextSymbolizer face-name="Open Sans Regular" placement="line" size="8" fill="#666666" avoid-edges="true" halo-fill="rgba(233, 229, 194, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="50" ><![CDATA[[ele]+' m']]></TextSymbolizer>
-  </Rule>
-</Style>
-<Layer name="contour"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>contour-label</StyleName>  </Layer>
 
 </Map>
