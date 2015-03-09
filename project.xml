@@ -366,73 +366,73 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
 
-<Style name="landuse" filter-mode="first">
+<Style name="landuse" filter-mode="first" opacity="0.25">
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([class] = 'park')</Filter>
-    <PolygonSymbolizer fill-opacity="0.8" fill="#c8df9f" />
+    <PolygonSymbolizer fill-opacity="0.8" fill="#7cc800" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
     <Filter>([class] = 'park')</Filter>
-    <PolygonSymbolizer fill-opacity="0.6" fill="#c8df9f" />
+    <PolygonSymbolizer fill-opacity="0.6" fill="#7cc800" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([class] = 'park')</Filter>
-    <PolygonSymbolizer fill-opacity="0.4" fill="#c8df9f" />
+    <PolygonSymbolizer fill-opacity="0.4" fill="#7cc800" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
     <Filter>([class] = 'park')</Filter>
-    <PolygonSymbolizer fill-opacity="0.2" fill="#c8df9f" />
+    <PolygonSymbolizer fill-opacity="0.2" fill="#7cc800" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <Filter>([class] = 'park')</Filter>
-    <PolygonSymbolizer fill="#c8df9f" />
+    <PolygonSymbolizer fill="#7cc800" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <MinScaleDenominator>1500</MinScaleDenominator>
     <Filter>([class] = 'pitch')</Filter>
-    <PolygonSymbolizer fill="#cae6a9" />
-    <LineSymbolizer stroke-width="1.4" stroke="#ddefc9" />
+    <PolygonSymbolizer fill="#63ff0d" />
+    <LineSymbolizer stroke-width="1.4" stroke="#7dff36" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([class] = 'pitch')</Filter>
-    <PolygonSymbolizer fill="#cae6a9" />
-    <LineSymbolizer stroke-width="1.2" stroke="#ddefc9" />
+    <PolygonSymbolizer fill="#63ff0d" />
+    <LineSymbolizer stroke-width="1.2" stroke="#7dff36" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'pitch')</Filter>
-    <PolygonSymbolizer fill="#cae6a9" />
-    <LineSymbolizer stroke-width="1" stroke="#ddefc9" />
+    <PolygonSymbolizer fill="#63ff0d" />
+    <LineSymbolizer stroke-width="1" stroke="#7dff36" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([class] = 'pitch')</Filter>
-    <PolygonSymbolizer fill="#cae6a9" />
-    <LineSymbolizer stroke-width="0.8" stroke="#ddefc9" />
+    <PolygonSymbolizer fill="#63ff0d" />
+    <LineSymbolizer stroke-width="0.8" stroke="#7dff36" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([class] = 'pitch')</Filter>
-    <PolygonSymbolizer fill="#cae6a9" />
+    <PolygonSymbolizer fill="#63ff0d" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <Filter>([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill="#b0c89f" fill-opacity="0.25" />
+    <PolygonSymbolizer fill="#67b040" fill-opacity="0.25" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
@@ -447,43 +447,43 @@
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <Filter>([class] = 'agriculture')</Filter>
-    <PolygonSymbolizer fill="#eae0d0" />
+    <PolygonSymbolizer fill="#eedfaa" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <Filter>([class] = 'industrial')</Filter>
-    <PolygonSymbolizer fill="#dddcdc" />
+    <PolygonSymbolizer fill="#c6c9ca" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <Filter>([class] = 'rock')</Filter>
-    <PolygonSymbolizer fill="#d8d7d5" />
+    <PolygonSymbolizer fill="#b7babb" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <Filter>([class] = 'sand')</Filter>
-    <PolygonSymbolizer fill="#f7ecd2" />
+    <PolygonSymbolizer fill="#ffebb9" />
     <PolygonPatternSymbolizer file="img/pattern/sand.png" alignment="global" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <Filter>([class] = 'parking')</Filter>
-    <PolygonSymbolizer fill="rgba(255, 255, 255, 0.25)" />
+    <PolygonSymbolizer fill="#ffffff" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <Filter>([class] = 'hospital')</Filter>
-    <PolygonSymbolizer fill="#f2e3e1" />
+    <PolygonSymbolizer fill="#fee4d8" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <Filter>([class] = 'cemetery')</Filter>
-    <PolygonSymbolizer fill="#d5dcc2" />
+    <PolygonSymbolizer fill="#8fd070" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <Filter>([class] = 'school')</Filter>
-    <PolygonSymbolizer fill="#f2eab8" fill-opacity="0.5" />
+    <PolygonSymbolizer fill="#ffea5f" />
   </Rule>
 </Style>
 <Layer name="landuse"
@@ -943,111 +943,111 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([type] = 'taxiway')</Filter>
-    <LineSymbolizer stroke-width="5" stroke="#eae9e9" stroke-linecap="butt" stroke-linejoin="miter" />
+    <LineSymbolizer stroke-width="5" stroke="#d3d6d6" stroke-linecap="butt" stroke-linejoin="miter" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([type] = 'taxiway')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#eae9e9" stroke-linecap="butt" stroke-linejoin="miter" />
+    <LineSymbolizer stroke-width="4" stroke="#d3d6d6" stroke-linecap="butt" stroke-linejoin="miter" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([type] = 'taxiway')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#eae9e9" stroke-linecap="butt" stroke-linejoin="miter" />
+    <LineSymbolizer stroke-width="3" stroke="#d3d6d6" stroke-linecap="butt" stroke-linejoin="miter" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([type] = 'taxiway')</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#eae9e9" stroke-linecap="butt" stroke-linejoin="miter" />
+    <LineSymbolizer stroke-width="2" stroke="#d3d6d6" stroke-linecap="butt" stroke-linejoin="miter" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([type] = 'taxiway')</Filter>
-    <LineSymbolizer stroke-width="1.5" stroke="#eae9e9" stroke-linecap="butt" stroke-linejoin="miter" />
+    <LineSymbolizer stroke-width="1.5" stroke="#d3d6d6" stroke-linecap="butt" stroke-linejoin="miter" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([type] = 'taxiway')</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#eae9e9" stroke-linecap="butt" stroke-linejoin="miter" />
+    <LineSymbolizer stroke-width="1" stroke="#d3d6d6" stroke-linecap="butt" stroke-linejoin="miter" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([type] = 'taxiway')</Filter>
-    <LineSymbolizer stroke-width="0.2" stroke="#eae9e9" stroke-linecap="butt" stroke-linejoin="miter" />
+    <LineSymbolizer stroke-width="0.2" stroke="#d3d6d6" stroke-linecap="butt" stroke-linejoin="miter" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([type] = 'runway')</Filter>
-    <LineSymbolizer stroke-width="23" stroke="#eae9e9" stroke-linecap="butt" stroke-linejoin="miter" />
+    <LineSymbolizer stroke-width="23" stroke="#d3d6d6" stroke-linecap="butt" stroke-linejoin="miter" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([type] = 'runway')</Filter>
-    <LineSymbolizer stroke-width="19" stroke="#eae9e9" stroke-linecap="butt" stroke-linejoin="miter" />
+    <LineSymbolizer stroke-width="19" stroke="#d3d6d6" stroke-linecap="butt" stroke-linejoin="miter" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([type] = 'runway')</Filter>
-    <LineSymbolizer stroke-width="15" stroke="#eae9e9" stroke-linecap="butt" stroke-linejoin="miter" />
+    <LineSymbolizer stroke-width="15" stroke="#d3d6d6" stroke-linecap="butt" stroke-linejoin="miter" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([type] = 'runway')</Filter>
-    <LineSymbolizer stroke-width="11" stroke="#eae9e9" stroke-linecap="butt" stroke-linejoin="miter" />
+    <LineSymbolizer stroke-width="11" stroke="#d3d6d6" stroke-linecap="butt" stroke-linejoin="miter" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([type] = 'runway')</Filter>
-    <LineSymbolizer stroke-width="7" stroke="#eae9e9" stroke-linecap="butt" stroke-linejoin="miter" />
+    <LineSymbolizer stroke-width="7" stroke="#d3d6d6" stroke-linecap="butt" stroke-linejoin="miter" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([type] = 'runway')</Filter>
-    <LineSymbolizer stroke-width="5" stroke="#eae9e9" stroke-linecap="butt" stroke-linejoin="miter" />
+    <LineSymbolizer stroke-width="5" stroke="#d3d6d6" stroke-linecap="butt" stroke-linejoin="miter" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([type] = 'runway')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#eae9e9" stroke-linecap="butt" stroke-linejoin="miter" />
+    <LineSymbolizer stroke-width="3" stroke="#d3d6d6" stroke-linecap="butt" stroke-linejoin="miter" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([type] = 'runway')</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#eae9e9" stroke-linecap="butt" stroke-linejoin="miter" />
+    <LineSymbolizer stroke-width="2" stroke="#d3d6d6" stroke-linecap="butt" stroke-linejoin="miter" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([type] = 'runway')</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#eae9e9" stroke-linecap="butt" stroke-linejoin="miter" />
+    <LineSymbolizer stroke-width="1" stroke="#d3d6d6" stroke-linecap="butt" stroke-linejoin="miter" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 3) and ([type] = 'apron')</Filter>
-    <PolygonSymbolizer fill="rgba(255, 255, 255, 0.25)" />
+    <PolygonSymbolizer fill="#ffffff" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 3)</Filter>
-    <PolygonSymbolizer fill="#eae9e9" />
+    <PolygonSymbolizer fill="#d3d6d6" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2)</Filter>
-    <LineSymbolizer stroke="#eae9e9" stroke-linecap="butt" stroke-linejoin="miter" />
+    <LineSymbolizer stroke="#d3d6d6" stroke-linecap="butt" stroke-linejoin="miter" />
   </Rule>
 </Style>
 <Layer name="aeroway"
@@ -1115,25 +1115,25 @@
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
     <Filter>([class] = 'hedge')</Filter>
-    <LineSymbolizer stroke-width="1.6" stroke="#9cc653" />
+    <LineSymbolizer stroke-width="1.6" stroke="#3d6200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <MinScaleDenominator>1500</MinScaleDenominator>
     <Filter>([class] = 'hedge')</Filter>
-    <LineSymbolizer stroke-width="1.4" stroke="#9cc653" />
+    <LineSymbolizer stroke-width="1.4" stroke="#3d6200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([class] = 'hedge')</Filter>
-    <LineSymbolizer stroke-width="1.2" stroke="#9cc653" />
+    <LineSymbolizer stroke-width="1.2" stroke="#3d6200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'hedge')</Filter>
-    <LineSymbolizer stroke-width="0.6" stroke="#9cc653" />
+    <LineSymbolizer stroke-width="0.6" stroke="#3d6200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>

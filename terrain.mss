@@ -25,9 +25,9 @@
   [zoom>=10] { polygon-opacity: 0.4; }
   [zoom>=11] { polygon-opacity: 0.28; }
   [zoom>=12] { polygon-opacity: 0.16; }
-  [class='wood'] { polygon-fill: @wood; }
-  [class='scrub'] { polygon-fill: mix(@wood,@crop,67%); }
-  [class='grass'] { polygon-fill: mix(@wood,@crop,33%); }
-  [class='crop'] { polygon-fill: @crop; }
+  [class='wood'] { polygon-fill: #B0C89F; }
+  [class='scrub'] { polygon-fill: mix(#B0C89F,#E9E5C2,67%); }
+  [class='grass'] { polygon-fill: mix(#B0C89F,#E9E5C2,33%); }
+  [class='crop'] { polygon-fill: #E9E5C2; }
   [class='snow'] { polygon-fill: #eff; }
 }

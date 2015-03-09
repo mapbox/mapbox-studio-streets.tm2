@@ -23,23 +23,24 @@
 
 @land:              #E8E0D8;
 @water:             #73B6E6;
-@grass:             #E1EBB0;
-@sand:              #F7ECD2;
-@rock:              #D8D7D5;
-@park:              #C8DF9F;
-@cemetery:          #D5DCC2;
-@wood:              #B0C89F;
-@industrial:        #DDDCDC;
-@agriculture:       #EAE0D0;
 @snow:              #E8EFEF;
 @crop:              #E9E5C2;
 @building:          darken(@land, 8);
-@hospital:          #F2E3E1;
-@school:            #F2EAB8;
-@pitch:             #CAE6A9;
-@sports:            @park;
 
-@parking:           fadeout(@road_fill, 75%);
+// Landuse colors account for 25% opacity:
+@grass:             #c8ff2d;
+@sand:              #ffebb9;
+@rock:              #b7babb;
+@park:              #7cc800;
+@cemetery:          #8fd070;
+@wood:              #67b040;
+@industrial:        #c6c9ca;
+@agriculture:       #eedfaa;
+@hospital:          #fee4d8;
+@school:            #ffea5f;
+@pitch:             #63ff0d;
+@parking:           #fff;
+@sports:            @park;
 
 // =====================================================================
 // ROAD COLORS

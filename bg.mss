@@ -79,6 +79,7 @@ Map { background-color: @land; }
 // =====================================================================
 
 #landuse[zoom>=7] {
+  opacity: 0.25;
   [class='pitch'] {
     polygon-fill: @pitch;
     [zoom>14] {
@@ -91,7 +92,6 @@ Map { background-color: @land; }
   }
   [class='school'] {
     polygon-fill: @school;
-    polygon-opacity: 0.5;
   }
   [class='cemetery'] {
     polygon-fill: @cemetery;
