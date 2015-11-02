@@ -1,6 +1,6 @@
 {
     "name": "mapbox-studio-streets",
-    "version": "6.1.1",
+    "version": "6.1.2",
     "description": "Mapbox Streets style for Mapbox Studio.",
     "main": "./package.json"
 }
