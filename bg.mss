@@ -189,7 +189,7 @@ Map { background-color: @land; }
 #aeroway['mapnik::geometry_type'=3][zoom>=13] {
   polygon-fill: @aeroway;
   [type='apron'] {
-    polygon-fill: @parking;
+    polygon-fill: fadeout(@parking,75%);
   }
 }
 
